@@ -13,10 +13,10 @@ $ docker compose build
 And then you can execute the containers by using:
 
 ´´´
-$ docker compose build
+$ docker compose up
 ´´´
 
-Then you need to run the migrations to create the application tables in the container DB:
+Then you need to run the migrations and create the application tables in the container DB, run in another terminal (with the hi-flask container running):
 
 ´´´
 $ docker compose exec hi-flask python src/manage.py create_db
